@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Автоматизированная штукатурка стен</title>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 offset-lg-4 col-md-9 offset-md-3">
+            <div class="logo">
+              <h1>Күзгі бал</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="features">
+    <div class="container">
+      <h2 class="section-header">"Күзгі бал"</h2>
+      <div class="features-slider">
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <img src="" alt="">
+            </picture>
+            <p></p>
+          </div>
+        </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <img src="" alt="">
+            </picture>
+            <p></p>
+          </div>
+        </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <img src="" alt="">
+            </picture>
+            <p></p>
+          </div>
+        </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <img src="" alt="">
+            </picture>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="container">
+      <div class="section-header">
+        <h2>Суреттер</h2>
+      </div>
+      <div class="feedback-slider">
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
+                <img src="img/photo/1.jpg" alt="">
+                <img src="img/photo/2.jpg" alt="">
+                <img src="img/photo/3.jpg" alt="">
+                <img src="img/photo/4.jpg" alt="">
+                <img src="img/photo/5.jpg" alt="">
+                <img src="img/photo/6.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feedback-text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                  тексты. Родного великий реторический гор языком бросил они путь, проектах,
+                  точках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
+                <img src="img/photo/1.jpg" alt="">
+                <img src="img/photo/2.jpg" alt="">
+                <img src="img/photo/3.jpg" alt="">
+                <img src="img/photo/4.jpg" alt="">
+                <img src="img/photo/5.jpg" alt="">
+                <img src="img/photo/6.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feedback-text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                  тексты. Родного великий реторический гор языком бросил они путь, проектах,
+                  точках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="fotorama" data-width="100%" data-nav="thumbs">
+                <img src="img/photo/1.jpg" alt="">
+                <img src="img/photo/2.jpg" alt="">
+                <img src="img/photo/3.jpg" alt="">
+                <img src="img/photo/4.jpg" alt="">
+                <img src="img/photo/5.jpg" alt="">
+                <img src="img/photo/6.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feedback-text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
+                  тексты. Родного великий реторический гор языком бросил они путь, проектах,
+                  точках.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <script src="slick/slick.min.js"></script>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.popup-btn').on('click', function(event){
+        event.preventDefault();
+        $('.popup').fadeIn();
+      });
+      $('.popup-close').on('click', function(event){
+        event.preventDefault();
+        $('.popup').fadeOut();
+      });
+      $('.feedback-slider').slick({
+
+      });
+      $('.features-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      });
+    });
+  </script>
+</body>
+</html>
